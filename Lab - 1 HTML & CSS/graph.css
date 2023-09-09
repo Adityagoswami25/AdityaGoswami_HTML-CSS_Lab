@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.graph-container {
+  background-color: #ccc;
+  display: flex;
+  margin-bottom: -10px;
+  padding: 20px;
+}
+
+.graph {
+  width: 100px;
+  height: 300px;
+  background-color: white;
+  margin: 0 10px; /* Adjust the margin as needed for spacing */
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.bar {
+  width: 100%;
+  background-color: rgb(87, 87, 87);
+  height: 0;
+  transition: height 2s;
+}
+
+.bar-30 {
+  animation: animate-bar-30 2s forwards;
+}
+
+.bar-40 {
+  animation: animate-bar-40 2s forwards;
+}
+
+.bar-80 {
+  animation: animate-bar-80 2s forwards;
+}
+
+@keyframes animate-bar-30 {
+  to {
+    height: 30%;
+  }
+}
+
+@keyframes animate-bar-40 {
+  to {
+    height: 40%;
+  }
+}
+
+@keyframes animate-bar-80 {
+  to {
+    height: 80%;
+  }
+}
+
+.percentage {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.bottom {
+  background-color: #ccc;
+  margin-right: 340px;
+}
+
+.bottom-text {
+  margin-bottom: 200px;
+  margin-left: 120px;
+  position: absolute;
+}
